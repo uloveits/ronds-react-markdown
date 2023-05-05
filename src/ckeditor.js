@@ -62,6 +62,7 @@ import Markdown from '@ckeditor/ckeditor5-markdown-gfm/src/markdown';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
 // import RestrictedEditingMode from '@ckeditor/ckeditor5-restricted-editing/src/restrictededitingmode'
 
+
 export default class FullEditor extends ClassicEditorBase { }
 
 const EMOJIS_ARRAY = [
@@ -265,19 +266,6 @@ FullEditor.defaultConfig = {
       { model: 'heading6', view: 'h6', title: 'H6', class: 'ck-heading_heading6' }
     ]
   },
-  blockToolbar: [
-    'heading',
-    'fontSize',
-    'fontColor',
-    'fontBackgroundColor',
-    'alignment',
-    '|',
-    'bulletedList',
-    'numberedList',
-    '|',
-    'blockQuote',
-    'imageUpload'
-  ],
   fontSize: {
     options: [8, 9, 10, 11, 12, 14, 16, 18, 20, 22, 24, 26, 28]
   },
